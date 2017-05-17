@@ -1,0 +1,5 @@
+sourcefile = open("facts.txt", "r")
+content = sourcefile.read()    # tells how to read the file
+
+print("Following was read from the file: {}".format(content)) 
+	  
