@@ -2,4 +2,33 @@ sourcefile = open("facts.txt", "r")
 content = sourcefile.read()    # tells how to read the file
 
 print("Following was read from the file: {}".format(content)) 
+
+
+
+
+Mode	Definition
+r	Read mode: if the file name does not match any known file, raises IOError. Handles the data as characters.
+w	Write mode: if the file name does not match any known file, creates a new file. If it does, empties the file before writing. Handles data as characters.
+a	Adding mode: if the file name does not match any known file, creates a new file. If it does, adds the new text to the end of the existing file. Handles data as characters.
+rb	bit-read: if the file name does not match any known file, raises IOError. Handles the data as bit values.
+wb	bit-write: if the file name does not match any known file, creates a new file. If it does, empties the file before writing. Handles data as bit values.
 	  
+  number = 1024
+04
+05  readfile = open("numberfile.txt","w")
+06  readfile.write( str(number) )
+07  readfile.close()
+08
+09  readnumber = 0
+10  readfile = open("numberfile.txt","r")
+11  readnumber = int(readfile.readline())
+12  readfile.close()
+13  
+14  print("A number",readnumber," was read and converted to a number:")
+15  readnumber = readnumber *2
+16  print(readnumber) 
+
+output:
+A number 1024 was read and converted to a number:
+2048
+
