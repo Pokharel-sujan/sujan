@@ -1,0 +1,19 @@
+def main():
+	inp= int(input("Give a number:"))
+	poweroftwo(inp)
+
+
+
+	
+
+
+def poweroftwo(inp):
+	power = 2**inp
+	print ("The result is {}".format(power))
+	return power
+	
+
+
+
+#if __name__ == "__main__":
+main()
