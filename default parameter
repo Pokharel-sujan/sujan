@@ -1,0 +1,27 @@
+
+def main():
+	while True:
+		inp=input("Write something (quit ends):")
+		#a=len(inp)
+		#print (a)
+		if (inp=="quit"):
+			break
+		else:
+			
+			tester(inp)
+		
+def tester(inp, givenstring="Too short"):
+	#inp=input("Write something (quit ends):")
+	""" This function test if is something"""
+	if (len(inp)<= 10):
+		print(givenstring)
+	else:
+		print(inp)
+		if "X" in inp:
+			print ("X spotted!")
+
+
+#if __name__ == "__main__" :
+main()
+
+
