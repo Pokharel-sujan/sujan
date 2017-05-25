@@ -1,0 +1,7 @@
+sujan= sorted(open('words.txt').readlines()) #words.txt contents gets printed in alphabetical orders
+print("Words in an alphabetical order:")
+for i in sujan:
+	print(i);
+  
+  
+  
