@@ -1,0 +1,18 @@
+class Player:
+	
+
+	def __init__(self, teamcolor, points):
+		self.teamcolor=teamcolor
+		self.points=points
+
+	def printout(self):
+		print("The", self.teamcolor ,"contender has", self.points,"points!")
+
+
+
+sujan1= Player("Blue", 300)
+sujan1.printout()
+
+#if we print player.printout()   
+
+#TypeError: printout() missing 1 required positional argument: 'self'
