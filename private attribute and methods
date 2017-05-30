@@ -1,0 +1,24 @@
+class Player:
+    teamcolor = "Blue"
+    __points = 0
+ 
+    def tellscore(self):
+    	print("I am", self.teamcolor+", we have", self.__points, "points!")
+
+    def goal(self):
+    	self.__points += 1        
+
+    def printout(self):
+    	print("The", self.teamcolor,"contender has", self.__points,"points!")
+ 
+def main():
+	sujan = Player()
+	sujan.goal()
+	sujan.tellscore()
+ 
+if __name__=="__main__":
+	main()
+
+
+"""Note: Here, when we call method goal, it adds 1, but we call tellscore() method directly, then
+we get like 0. Private attributes can be changed with class own methods like here we changed points to 1"""
