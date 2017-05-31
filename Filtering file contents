@@ -1,0 +1,13 @@
+filehandle=open("strings.txt","r")
+
+while True:
+    content=filehandle.readline()
+    if content == "":
+        break
+	#breaking into individual parts with help of slicing!!!
+    content = content[:-1]
+   
+    if content.isalnum():   #checking if file has numbers and alphabets( alnum== alphabets and numbers)
+        print(content, "was ok.")
+    else:
+        print(content,  "was invalid.")
