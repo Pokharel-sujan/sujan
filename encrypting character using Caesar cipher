@@ -1,0 +1,34 @@
+#!/bin/python3
+alphabet= "abcdefghijklmnopqrstuvwxyz"
+# print(alphabet[0])
+# print(alphabet[6])
+# print(alphabet[9])
+
+
+key = 4
+
+character= input("Please enter a character:")
+
+#Now we have to find the character using Find() method.
+
+position= alphabet.find(character)
+
+print(position)
+
+#To encrypt: Character + the key
+
+newposition= (position+ key) % 26
+
+print(newposition)
+
+"""What happens when you try and encrypt the letter ‘y’?
+Notice how the newPosition is 28, and there aren’t 28 letters in the alphabet!   so what we can do is use % sign
+to tell the new position to go back to position 0 once it goes to position 26"""
+
+
+"""Finally, you want to print the letter at the new position.
+For example, adding the key to the letter ‘e’ gives 7, and the letter at position 7 of the alphabet is ‘h’."""
+
+
+newcharacter= alphabet[newposition]
+print("The new character is:",newcharacter)
